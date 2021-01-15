@@ -7,11 +7,11 @@ A simple MERN stack app for login and logout
 Use the package manager npm to install dependicies.
 
 ```bash
-miniapp $ npm install 
+miniapp/ $ npm install 
 ```
 Change directory to client/
 ```bash
-miniapp/client $ npm install  
+miniapp/client/ $ npm install  
 ```
 ## Running
  chnage directory to miniapp/
