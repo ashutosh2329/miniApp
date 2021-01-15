@@ -15,6 +15,12 @@ class Register extends Component {
       errors: {},
     };
   }
+  componentDidMount() {
+    // If logged in and user navigates to Register page, should redirect them to dashboard
+    if (this.props.auth.isAuthenticated) {
+      this.props.history.push("/dashboard");
+    }
+  }
   componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
       this.setState({
@@ -119,7 +125,7 @@ class Register extends Component {
                     marginTop: "1rem",
                   }}
                   type="submit"
-                  className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                  class="btn waves-effect waves-light"
                 >
                   Sign up
                 </button>
